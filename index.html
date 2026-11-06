@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Same Task, Three Prompts</title>
+<meta name="description" content="Prompt engineering case study: landing pages generated from a structured prompt, plus the comparison deck.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='14' fill='%232F6F5E'/></svg>">
+<style>
+  :root { --ink:#1B1F24; --muted:#5B6573; --surf:#F2F3F5; --green:#2F6F5E; --red:#C8102E; --amber:#E9B949; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family: Calibri, "Segoe UI", system-ui, -apple-system, sans-serif; background:#fff; color:var(--ink); line-height:1.5; }
+  header { background:var(--ink); color:#fff; padding:72px 16px 64px; }
+  .wrap { max-width:1040px; margin:0 auto; }
+  .kicker { color:var(--amber); font-weight:700; letter-spacing:.18em; font-size:14px; }
+  h1 { font-family: Cambria, Georgia, serif; font-size:clamp(36px,6vw,60px); line-height:1.05; margin:14px 0 16px; }
+  header p { color:var(--surf); font-size:20px; max-width:720px; }
+  main { padding:48px 16px 64px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:24px; }
+  a.card { display:flex; flex-direction:column; gap:10px; background:var(--surf); border-radius:16px; padding:28px; color:inherit; text-decoration:none; transition:transform .15s, box-shadow .15s; }
+  a.card:hover, a.card:focus-visible { transform:translateY(-3px); box-shadow:0 10px 28px rgba(0,0,0,.10); }
+  a.card:focus-visible { outline:3px solid var(--green); outline-offset:3px; }
+  .tag { display:flex; align-items:center; gap:10px; font-size:13px; font-weight:700; letter-spacing:.08em; color:var(--muted); }
+  .dot { width:16px; height:16px; border-radius:50%; background:var(--c); flex:none; }
+  .card h2 { font-family: Cambria, Georgia, serif; font-size:26px; }
+  .card p { color:var(--muted); font-size:16px; }
+  .go { margin-top:auto; font-weight:700; color:var(--c); }
+  footer { color:var(--muted); font-size:14px; padding:0 16px 40px; }
+  @media (prefers-reduced-motion: reduce) { a.card { transition:none; } a.card:hover { transform:none; } }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="kicker">PROMPT ENGINEERING · CASE STUDY</div>
+  <h1>Same Task, Three Prompts</h1>
+  <p>What separates a bad prompt from a good one, and what a structured prompt actually produces.</p>
+</div></header>
+<main><div class="wrap grid">
+  <a class="card" href="v1.html" style="--c:var(--green)">
+    <span class="tag"><span class="dot"></span>LANDING PAGE · VERSION 1</span>
+    <h2>PREPPED</h2>
+    <p>Meal-prep landing page for students, generated from the structured “good prompt.”</p>
+    <span class="go">Open page →</span>
+  </a>
+  <a class="card" href="v2.html" style="--c:var(--green)">
+    <span class="tag"><span class="dot"></span>LANDING PAGE · VERSION 2</span>
+    <h2>PREPPED v2</h2>
+    <p>A second iteration of the PREPPED landing page.</p>
+    <span class="go">Open page →</span>
+  </a>
+  <a class="card" href="Prompt_Comparison_FINAL.pptx" download style="--c:var(--red)">
+    <span class="tag"><span class="dot"></span>PRESENTATION · .PPTX</span>
+    <h2>Prompt comparison deck</h2>
+    <p>7 slides comparing the bad prompt with two good prompts, and the two good prompts with each other.</p>
+    <span class="go">Download deck ↓</span>
+  </a>
+</div></main>
+<footer><div class="wrap">Placeholder business content for a class exercise. PREPPED is a fictional brand.</div></footer>
+</body>
+</html>
